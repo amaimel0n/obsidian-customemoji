@@ -1,4 +1,4 @@
-/* amaimelon-custom-emoji - built with esbuild */
+/* customemoji - built with esbuild */
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;

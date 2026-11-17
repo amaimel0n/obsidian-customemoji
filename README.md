@@ -44,10 +44,10 @@ An Obsidian plugin for Misskey-style custom emoji. Drop image files into a folde
 コミュニティプラグインへの登録が完了するまでは、手動インストールが可能です。
 
 1. GitHub の Release から `main.js`、`manifest.json`、`styles.css` をダウンロード
-2. 保管庫の `.obsidian/plugins/amaimelon-custom-emoji/` フォルダに入れる
+2. 保管庫の `.obsidian/plugins/customemoji/` フォルダに入れる
 3. Obsidian の設定 → コミュニティプラグインで「カスタム絵文字（Misskey風）」を ON にする
 
-Until it is listed in the community plugins, manual installation is available: download `main.js`, `manifest.json`, and `styles.css` from the GitHub Release, place them in `.obsidian/plugins/amaimelon-custom-emoji/` in your vault, and enable the plugin under Settings → Community plugins.
+Until it is listed in the community plugins, manual installation is available: download `main.js`, `manifest.json`, and `styles.css` from the GitHub Release, place them in `.obsidian/plugins/customemoji/` in your vault, and enable the plugin under Settings → Community plugins.
 
 ## ライセンス / License
 
