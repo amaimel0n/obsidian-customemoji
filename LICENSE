@@ -1,21 +1,35 @@
-MIT License
+Copyright (c) 2026 amaimelon. All rights reserved.
 
-Copyright (c) 2026 amaimelon
+Permission is granted to download and use this software for personal,
+non-commercial purposes only.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+The following are NOT permitted without prior written permission from
+the copyright holder:
+- Redistribution of this software, whether in its original or a
+  modified form
+- Distribution of modified versions or derivative works
+- Commercial use of this software, including selling it
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE
+FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF
+THIS SOFTWARE.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+---
+
+（日本語訳 / Japanese translation）
+
+Copyright (c) 2026 amaimelon. All rights reserved.
+
+本ソフトウェアは、個人的かつ非商用目的に限り、ダウンロードして
+使用することができます。
+
+以下の行為は、著作権者の事前の書面による許可なく行うことは
+できません：
+- 本ソフトウェアの再配布（オリジナルのまま、または改変した形での配布）
+- 改変したバージョンや二次的著作物の配布
+- 本ソフトウェアの商用利用（販売を含む）
+
+本ソフトウェアは「現状のまま」提供され、明示的か暗黙的かを問わず
+いかなる保証も行いません。本ソフトウェアの使用により生じた
+いかなる損害についても、著作権者は責任を負いません。

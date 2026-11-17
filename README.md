@@ -51,4 +51,6 @@ Until it is listed in the community plugins, manual installation is available: d
 
 ## ライセンス / License
 
-MIT License
+個人利用のみ可の独自ライセンスです。再配布・改変したものの配布・商用利用はできません。詳しくは LICENSE ファイルをご覧ください
+
+Personal use only. Redistribution, distribution of modified versions, and commercial use are not permitted. See the LICENSE file for details.
