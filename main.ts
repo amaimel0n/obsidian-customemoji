@@ -136,7 +136,7 @@ export default class CustomEmojiPlugin extends Plugin {
 
   applyEmojiSize() {
     document.body.style.setProperty(
-      "--hamu-emoji-size",
+      "--amaimelon-emoji-size",
       `${this.settings.emojiSizeEm}em`
     );
   }
@@ -234,7 +234,7 @@ export default class CustomEmojiPlugin extends Plugin {
       /* imgタグだとテーマや他のプラグインの「画像」用スタイルを拾って
          ブロック画像みたいな見た目になってしまうため、背景画像のspanで描く */
       const span = document.createElement("span");
-      span.className = "hamu-emoji";
+      span.className = "amaimelon-emoji";
       span.style.backgroundImage = `url("${src.replace(/"/g, "%22")}")`;
       span.title = match[0];
       span.setAttribute("role", "img");
@@ -266,7 +266,7 @@ class EmojiWidget extends WidgetType {
     /* リーディングビューと同じく背景画像spanで描く。
        imgだとテーマ等の画像用スタイルを拾ってブロック画像化してしまうため */
     const span = document.createElement("span");
-    span.className = "hamu-emoji";
+    span.className = "amaimelon-emoji";
     span.style.backgroundImage = `url("${this.src.replace(/"/g, "%22")}")`;
     span.title = `:${this.emojiName}:`;
     span.setAttribute("role", "img");
@@ -386,15 +386,15 @@ class EmojiEditorSuggest extends EditorSuggest<EmojiEntry> {
   }
 
   renderSuggestion(item: EmojiEntry, el: HTMLElement) {
-    el.classList.add("hamu-emoji-suggest-item");
-    const img = el.createEl("img", { cls: "hamu-emoji-suggest-img" });
+    el.classList.add("amaimelon-emoji-suggest-item");
+    const img = el.createEl("img", { cls: "amaimelon-emoji-suggest-img" });
     img.src = this.plugin.app.vault.getResourcePath(item.file);
     img.alt = item.name;
-    el.createSpan({ cls: "hamu-emoji-suggest-name", text: `:${item.name}:` });
+    el.createSpan({ cls: "amaimelon-emoji-suggest-name", text: `:${item.name}:` });
     const aliases = this.plugin.settings.aliases[item.name];
     if (aliases && aliases.length > 0) {
       el.createSpan({
-        cls: "hamu-emoji-suggest-alias",
+        cls: "amaimelon-emoji-suggest-alias",
         text: aliases.join(" "),
       });
     }
@@ -434,12 +434,12 @@ class EmojiPickModal extends FuzzySuggestModal<EmojiEntry> {
   }
 
   renderSuggestion(match: FuzzyMatch<EmojiEntry>, el: HTMLElement) {
-    el.classList.add("hamu-emoji-suggest-item");
-    const img = el.createEl("img", { cls: "hamu-emoji-suggest-img" });
+    el.classList.add("amaimelon-emoji-suggest-item");
+    const img = el.createEl("img", { cls: "amaimelon-emoji-suggest-img" });
     img.src = this.plugin.app.vault.getResourcePath(match.item.file);
     img.alt = match.item.name;
     el.createSpan({
-      cls: "hamu-emoji-suggest-name",
+      cls: "amaimelon-emoji-suggest-name",
       text: `:${match.item.name}:`,
     });
   }
@@ -509,7 +509,7 @@ class CustomEmojiSettingTab extends PluginSettingTab {
       const setting = new Setting(containerEl).setName(`:${name}:`);
       const img = document.createElement("img");
       img.src = this.app.vault.getResourcePath(file);
-      img.className = "hamu-emoji-setting-img";
+      img.className = "amaimelon-emoji-setting-img";
       img.alt = name;
       setting.nameEl.prepend(img);
       setting.addText((text) => {

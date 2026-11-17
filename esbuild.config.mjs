@@ -5,7 +5,7 @@ import { builtinModules } from "module";
 const prod = process.argv[2] === "production";
 
 const context = await esbuild.context({
-  banner: { js: "/* hamu-custom-emoji - built with esbuild */" },
+  banner: { js: "/* amaimelon-custom-emoji - built with esbuild */" },
   entryPoints: ["src/main.ts"],
   bundle: true,
   external: [

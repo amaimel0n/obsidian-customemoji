@@ -1,4 +1,4 @@
-/* hamu-custom-emoji - built with esbuild */
+/* amaimelon-custom-emoji - built with esbuild */
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
@@ -111,7 +111,7 @@ var CustomEmojiPlugin = class extends import_obsidian.Plugin {
   }
   applyEmojiSize() {
     document.body.style.setProperty(
-      "--hamu-emoji-size",
+      "--amaimelon-emoji-size",
       `${this.settings.emojiSizeEm}em`
     );
   }
@@ -200,7 +200,7 @@ var CustomEmojiPlugin = class extends import_obsidian.Plugin {
         );
       }
       const span = document.createElement("span");
-      span.className = "hamu-emoji";
+      span.className = "amaimelon-emoji";
       span.style.backgroundImage = `url("${src.replace(/"/g, "%22")}")`;
       span.title = match[0];
       span.setAttribute("role", "img");
@@ -227,7 +227,7 @@ var EmojiWidget = class extends import_view.WidgetType {
   }
   toDOM() {
     const span = document.createElement("span");
-    span.className = "hamu-emoji";
+    span.className = "amaimelon-emoji";
     span.style.backgroundImage = `url("${this.src.replace(/"/g, "%22")}")`;
     span.title = `:${this.emojiName}:`;
     span.setAttribute("role", "img");
@@ -320,15 +320,15 @@ var EmojiEditorSuggest = class extends import_obsidian.EditorSuggest {
     return this.plugin.searchEmoji(context.query).slice(0, 24);
   }
   renderSuggestion(item, el) {
-    el.classList.add("hamu-emoji-suggest-item");
-    const img = el.createEl("img", { cls: "hamu-emoji-suggest-img" });
+    el.classList.add("amaimelon-emoji-suggest-item");
+    const img = el.createEl("img", { cls: "amaimelon-emoji-suggest-img" });
     img.src = this.plugin.app.vault.getResourcePath(item.file);
     img.alt = item.name;
-    el.createSpan({ cls: "hamu-emoji-suggest-name", text: `:${item.name}:` });
+    el.createSpan({ cls: "amaimelon-emoji-suggest-name", text: `:${item.name}:` });
     const aliases = this.plugin.settings.aliases[item.name];
     if (aliases && aliases.length > 0) {
       el.createSpan({
-        cls: "hamu-emoji-suggest-alias",
+        cls: "amaimelon-emoji-suggest-alias",
         text: aliases.join(" ")
       });
     }
@@ -362,12 +362,12 @@ var EmojiPickModal = class extends import_obsidian.FuzzySuggestModal {
     return `${item.name} ${aliases.join(" ")}`;
   }
   renderSuggestion(match, el) {
-    el.classList.add("hamu-emoji-suggest-item");
-    const img = el.createEl("img", { cls: "hamu-emoji-suggest-img" });
+    el.classList.add("amaimelon-emoji-suggest-item");
+    const img = el.createEl("img", { cls: "amaimelon-emoji-suggest-img" });
     img.src = this.plugin.app.vault.getResourcePath(match.item.file);
     img.alt = match.item.name;
     el.createSpan({
-      cls: "hamu-emoji-suggest-name",
+      cls: "amaimelon-emoji-suggest-name",
       text: `:${match.item.name}:`
     });
   }
@@ -414,7 +414,7 @@ var CustomEmojiSettingTab = class extends import_obsidian.PluginSettingTab {
       const setting = new import_obsidian.Setting(containerEl).setName(`:${name}:`);
       const img = document.createElement("img");
       img.src = this.app.vault.getResourcePath(file);
-      img.className = "hamu-emoji-setting-img";
+      img.className = "amaimelon-emoji-setting-img";
       img.alt = name;
       setting.nameEl.prepend(img);
       setting.addText((text) => {

@@ -1,10 +1,10 @@
 /* カスタム絵文字（Misskey風） */
 
 /* ノート本文中の絵文字（リーディングビューでは背景画像span、ライブプレビューではimg） */
-.hamu-emoji {
+.amaimelon-emoji {
   display: inline-block !important;
-  width: var(--hamu-emoji-size, 1.4em);
-  height: var(--hamu-emoji-size, 1.4em);
+  width: var(--amaimelon-emoji-size, 1.4em);
+  height: var(--amaimelon-emoji-size, 1.4em);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,30 +22,30 @@
 
 
 /* 「:」候補ポップアップとモーダルの項目 */
-.hamu-emoji-suggest-item {
+.amaimelon-emoji-suggest-item {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.hamu-emoji-suggest-img {
+.amaimelon-emoji-suggest-img {
   height: 1.8em;
   width: 1.8em;
   object-fit: contain;
   flex-shrink: 0;
 }
 
-.hamu-emoji-suggest-name {
+.amaimelon-emoji-suggest-name {
   font-weight: 600;
 }
 
-.hamu-emoji-suggest-alias {
+.amaimelon-emoji-suggest-alias {
   color: var(--text-muted);
   font-size: 0.85em;
 }
 
 /* 設定画面のサムネイル */
-.hamu-emoji-setting-img {
+.amaimelon-emoji-setting-img {
   height: 1.6em;
   width: 1.6em;
   object-fit: contain;
